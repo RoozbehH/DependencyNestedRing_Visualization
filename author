@@ -1,0 +1,343 @@
+Python 2.7.8 (default, Jul  2 2014, 19:50:44) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+337
+Cardoso N.  1
+ Vale J.  1
+ Ribeiro O.  1
+ Cabral J. 1
+Mohan K.  1
+ Ramesh B. 1
+Trask B. 1
+ Roman A. 1
+Robinson-Mallett C. 1
+ Grochtmann M. 1
+ Wegener J.  1
+ Kohnlein J.  1
+ Kuhn S. 1
+Barreiros  J.  1
+ Moreira Ana 1
+Hua-lin Yang 1
+ Fang Deng 1
+Metzger A. 1
+ Poh K. 1
+ Heymans P.  2
+ Schobbens P.  1
+ Saval G. 1
+ Trew T. 1
+Salinesi C. 1
+ Mazo R. 1
+ Djebbi O. 1
+ Diaz D. 1
+Jeong Ah Kim 1
+Schirmeier H. 1
+ Spinczyk O. 1
+Gimenes I.M.S. 1
+ Junior E.A.O. 1
+ Lazilha F.R. 1
+ Barroca L. 1
+Hervieu A. 1
+ Baudry B. 1
+ Gotlieb A. 1
+Acher M. 1
+ Michel R. 1
+ Heymans P. 1
+ Collet P. 1
+ Lahire P. 1
+Cheng Thao 1
+ Munson E.V. 1
+ Nguyen T.N. 1
+Andersson H. 1
+ Carlsson M.  1
+ O?lvander J. 1
+Jing Liu 1
+ Dehlinger J. 1
+ Lutz R. 1
+Muller J. 1
+ Lillack M. 1
+Dhungana D. 1
+Groher Iris 1
+ Weinreich Rainer 1
+Thurimella A.K. 1
+ Janzen D. 2
+Laguna M.A. 1
+ Herna?ndez C. 1
+Dehlinger J. 1
+ Lutz R.R. 1
+Babar M.A. 1
+ Shull F. 1
+Sozen N. 1
+ Merlo E.  1
+Breitbart Y. 1
+ Rastogi R. 1
+ Silberschatz A.  1
+Cardenas Jorge 1
+ Romero Jesus  1
+Hoare T. 1
+Koivulahti-Ojala M. 1
+ Kakola T.  1
+Beuche D. 1
+ Birk A. 1
+ Dreier H. 1
+ Fleischmann A. 1
+ Galle H. 1
+ Heller G. 1
+ John I. 1
+ Kolagari R.T. 1
+ von der Massen T. 1
+ Wolfram A.  1
+Kibum Park 2
+ Ryu D. 1
+ Jongmoon Baik  1
+Cirilo E. 1
+ Nunes I. 1
+ Kulesza U. 1
+ Lucena C.  1
+Mellado D. 1
+ Rodriguez  J. 1
+ Fernandez-Medina E. 1
+ Piattini M.  1
+Groher I. 1
+ Volter M. 1
+ Schwanninger C.  1
+Abbasi E.K. 1
+ Hubaux A. 1
+Jain A. 1
+ Biesiadecki J.  1
+Valdivia C.E. 1
+ Chow S. 1
+ Fafard S. 1
+ The?riault O. 1
+ Yandt M. 1
+ Wheeldon J.F. 1
+ SpringThorpe A.J. 1
+ Rioux B. 1
+ McMeekin D. 1
+ Masson D. 1
+ Riel B. 1
+ Aimez V. 1
+ Are?s R. 1
+ Cook J. 1
+ Hall T.J. 1
+ Shepherd F. 1
+ Hinzer K.  1
+Frank A. 1
+ Brenner E.  1
+Schmid K.  1
+Krennrich K. 1
+ Eisenbarth M.  1
+Mannion M.  1
+ Kaindl H.  1
+Turnes L.  1
+ Bonifacio R.  1
+ Alves V.  1
+ Lammel Ralf  1
+Al Saad M.  1
+ Fehr E.  1
+ Kamenzky N.  1
+ Schiller J.  1
+Romanelli F.  1
+ Tampalini F.  1
+Magnus Eriksson 2
+ Henrik Morast 1
+ Jürgen Börstler 1
+ Kjell Borg 1
+Markus Voelter 1
+Tadahisa Kato 1
+ Masumi Kawakami 1
+ Tomoyuki Myojin 1
+ Hideto Ogawa 1
+ Koji Hirono 1
+ Takashi Hasegawa 1
+Paul C. Clements 1
+ Lawrence G. Jones 1
+ John D. McGregor 1
+ Linda M. Northrop 1
+Mahdi Derakhshanmanesh 1
+ Joachim Fox 1
+ Jürgen Ebert 1
+Stefan Strobl 1
+ Mario Bernhart 1
+ Thomas Grechenig 1
+Michail Anastasopoulos 1
+Daniel Pech 1
+ Jens Knodel 1
+ Ralf Carbon 1
+ Clemens Schitter 1
+ Dirk Hein 1
+Isabel John 1
+ Adeline Silva 1
+Herman Hartmann 5
+ Tim Trew 2
+ Aart Matsinger 2
+Michaela Steffens 1
+ Sebastian Oster 2
+ Malte Lochau 3
+ Thomas Fogdal 1
+Hans Peter Jepsen 1
+ Danilo Beuche 1
+Jacques Thomas 1
+ Christian Dziobek 1
+ Bernd Hedenetz 1
+Iris Groher 1
+ Markus Voelter 1
+Rafael Capilla 1
+ Francisco Nava 1
+ Juan C. Duenas 1
+Ramin Tavakoli Kolagari 1
+ Mark-Oliver Reiser 1
+Harald Cichos 1
+ Andy Schürr 1
+Karina Villela 1
+ Taslim Arif 1
+ Damiano Zanardini 1
+Michael Kircher 1
+ Peter Hofman 1
+William A. Hetrick 1
+ Charles W. Krueger 1
+ Joseph G. Moore 1
+Paul Grünbacher 1
+ Rick Rabiser 1
+ Deepak Dhungana 1
+ Martin Lehofer 1
+ Duksan Ryu 1
+ Jongmoon Baik 1
+ Mila Keren 1
+ Julia Rubin 1
+ Tali Yatzkar-Haham 1
+Sebastian Oster 1
+ Ivan Zorcic 1
+ Florian Markert 1
+A. Hubaux 1
+ P. Heymans 1
+ H. Unphon 1
+Matthias Galster 1
+Michael Schulze 1
+ Jan Mauersberger 1
+ Danilo Beuche 1
+Óscar Ortiz 1
+ Ana Belén García 1
+ Rafael Capilla 1
+ Jan Bosch 1
+ Mike Hinchey 1
+Fuqing Yang 1
+ Hong Mei 1
+Paul Clements 1
+ Charles Krueger 1
+ James Shepherd 1
+ Andrew Winkler 1
+Bardia Mohabbati 1
+ Mohsen Asadi 1
+ Dragan Gaševi? 1
+ Marek Hatala 1
+ Hausi A. Müller 1
+ Mila Keren 1
+ Aart Matsinger 1
+ Julia Rubin 1
+ Tim Trew 2
+ Tali Yatzkar-Haham 1
+Anil Kumar Thurimella 2
+ Bernd Bruegge 1
+Rick Rabiser 1
+ Paul Grünbacher 1
+ Deepak Dhungana 1
+Liana Barachisio Lisboa 1
+ Vinicius Cardoso Garcia 1
+ Daniel Lucrédio 1
+ Eduardo Santana de Almeida 1
+ Silvio Romero de Lemos Meira 1
+ Renata Pontin de Mattos Fortes 1
+Mathieu Acher 1
+ Philippe Collet 1
+ Philippe Lahire 1
+ Robert B. France 1
+ Jürgen Börstler 1
+ Kjell Borg 1
+ Bernd Brügge 1
+Senthil K. Chandrasegaran 1
+ Karthik Ramani 1
+ Ram D. Sriram 1
+ Imré Horváth 1
+ Alain Bernard 1
+ Ramy F. Harik 1
+ Wei Gao 1
+Uirá Kulesza 1
+ Sérgio Soares 2
+ Christina Chavez 1
+ Fernando Castor 1
+ Paulo Borba 1
+ Carlos Lucena 1
+ Paulo Masiero 1
+ Claudio Sant’Anna 1
+ Fabiano Ferrari 1
+ Vander Alves 1
+ Roberta Coelho 1
+ Eduardo Figueiredo 1
+ Paulo F. Pires 1
+ Flávia Delicato 1
+ Eduardo Piveta 1
+ Carla Silva 1
+ Valter Camargo 1
+ Rosana Braga 1
+ Julio Leite 1
+ Otávio Lemos 1
+ Chang-ai Sun 1
+ Rowan Rossing 1
+ Marco Sinnema 1
+ Pavel Bulanov 1
+ Marco Aiello 1
+Hongyu Pei Breivold 1
+ Ivica Crnkovic 1
+ Magnus Larsson 1
+Begoña Moros 1
+ Ambrosio Toval 2
+ Francisca Rosique 1
+ Pedro Sánchez 1
+Dagný Hauksdóttir 1
+ Niels Henrik Mortensen 1
+ Poul Erik Nielsen 1
+ Jan Bosch 1
+Hwai-En Tseng 1
+ Chien-Cheng Chang 1
+ Shih-Chen Lee 1
+ Chi-Cheng Liao 1
+Cipriano Forza 1
+ Fabrizio Salvador 1
+Joaquín Nicolás 1
+Joaquín Guillén 1
+ Javier Miranda 1
+ Juan Manuel Murillo 1
+ Carlos Canal 1
+Krzysztof Wnuk 1
+ Tony Gorschek 1
+ Showayb Zahda 1
+Fabio Q.B. da Silva 1
+ André L.M. Santos 1
+ A. César C. França 1
+ Cleviton V.F. Monteiro 1
+ Felipe Farias Maciel 1
+José H. Canós 1
+ Marcos R.S. Borges 1
+ Ma Carmen Penadés 1
+ Abel Gómez 1
+ Manuel Llavador 1
+G.P. Gujarathi 1
+ Y.-S. Ma 1
+Jesper Momme 2
+ Hans-Henrik Hvolby 1
+Stephen Lane 1
+ Ita Richardson 1
+Gregory R. Heim 1
+ David Xiaosong Peng 1
+M. Price 1
+ S. Raghunathan 1
+ R. Curran 1
+J.C. Albiñana 1
+ C. Vila 1
+David C. Yen 1
+ David C. Chou 1
+ Jane Chang 1
+Rosa Grimaldi 1
+ Salvatore Torrisi 1
+>>> 

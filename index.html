@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+    <style style="vertical-align: middle; text-align: justify">
+    		.group
+    		{
+    	        pointer-events: all;
+    	        height: auto;
+    		}
+        #Header
+        {
+    			top: 0;
+    			width: 100%;
+    			height: 200px;
+    			margin:0;
+    			position: absolute;
+    			overflow:hidden;
+    			font-color: rgba(50,50,255,1);
+			
+        }
+
+	    	#infoDiv
+        {
+	        top: 200px;
+	
+	        width: 35%;
+	        height: 470px;
+	        overflow: hidden;
+	        float: right;
+	        right: 0px;
+			    position:absolute;
+	       
+		    }
+		
+        #radarDiv
+        {
+	        top: 670px;
+	        width: 35%;
+	        height: 210px;
+	        position: absolute;
+	        float: right;
+	        right: 0px;
+	        text-shadow: 0px 0px rgba(255,205,206,1.00);
+	
+        }
+
+        #scatterDiv
+        {
+    			top: 880px;
+    			width: 35%;
+    			height: 321px;
+    			position: absolute;
+    			float: right;
+    			right: 0px;
+    		
+    		}
+
+        #Container
+        {
+			
+    			margin: 0 auto;
+    			width: 65%;
+    			top: 200px;
+    			float: left;
+    			height: 1000px;
+    			position: absolute;
+    			background-color: white;/*#F0F0F0;*/
+        }
+
+        #Footer
+        {
+	        margin:0 auto;
+	        width: 100%;
+	        top: 1250px;
+	        
+	        position: absolute;
+             
+            
+            text-align:left;
+            vertical-align:middle;
+        }
+    		h1
+    		{
+    	        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    	        font-style: normal;
+    	        font-weight: bolder;
+    	        text-align: left;
+    	        color: rgb(0, 99, 147); /*#FFFFFF;*/
+                width:80%;
+                padding-left:40px;
+    		}
+    		p.headerDesc
+    		{
+    			width: 80%;
+    			color: #676767;
+    			padding-left: 70px;
+    			padding-right: 40px;
+    			font-size: 16px;
+    			text-align: justify;
+    			text-justify: inter-word;
+    			font-family: Arial;
+    			font-style: normal;
+    			font-weight: 400;
+    		}
+
+        input 
+        {
+               border: 1px dotted #ccc; 
+               background: white; 
+               font-family: monospace; 
+               padding: 10px 20px; 
+               font-size: 18px; 
+               margin: 20px 10px 20px 0; 
+               color: red;
+               position:absolute;
+               top:200px;
+               left:1000px;
+        }
+    		.spec
+    		{
+    			font-family: Arial;
+    		}
+    		.desc
+    		{
+    			font-family: Arial;
+    		}
+    		.leggendtxt
+    		{
+    			font-family: Arial;
+    			font-size:13px;
+    		}
+    		.titleSpec
+    		{
+    			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    			font-size:17px;
+    		}
+		
+        input:focus { background-color:yellow; outline: none;}
+        
+	</style>
+<title>Visualization</title>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/alfa-slab-one:n4:default;emblema-one:n4:default;alex-brush:n4:default;aladin:n4:default;abril-fatface:n4:default;lekton:n4:default;aguafina-script:n4:default;clara:n4:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<Div id="Header">
+        
+    	<p class="headerTitle"><h1>Quality ranking by dependent nested rings and qualifier radar chart</h1></p>
+        <p class="headerDesc">Due to the increasing need of extracting relevant information from data and also increasing
+
+the   growth of data, we motivated design data visualization tool that handle this requirement. 
+
+The main goal of our work is aggregate a large amounts of data and verifying extracted 
+
+quality of entities (i.e. Conference/Journal, Paper, Author, key Word) from normalizing the 
+
+data. The dataset gathered from IEEE digital library that consists of publisher, name of 
+
+Journal/Conference, authors name, year of publishing, title of paper, Keyword and citation 
+
+for many papers. The application includes four main components. 1. Dependency nested rings 
+
+that represent total data of our dataset entirely such that nodes are conference/journal names, 
+
+paper name, key word and author from inner ring to outer ring respectively. 2. Text part that 
+
+expresses the description about considered node. 3. Radar chart that visuals the quality each 
+
+entity based on some criteria. 4. Scatter plot that display two variables rank (Y-axis) and year 
+
+(X-axis) for each entities separately.Now you can see the mentioned articles in bellow parts.</p> 
+    </Div>
+	<div id="infoDiv"  ></div>
+    <div id="radarDiv"></div>
+    <div id="scatterDiv">
+    	<p class="titleSpec" style="margin-left:40px;">Rank of Papers</p>
+    	<canvas id="scatterConv" style="left:20px; float:right; margin:20px;"></canvas>
+    </div>
+	<div id="Container">
+
+        <input id="searchBox" onkeyup="textChange();" style="left: 70%; top: 0px; width: 100px; height: 4px; justify-content: center;" type="text">
+        <select id="searchCategories" style="left: 85%; top: 0px; width: 100px; height: 20px; justify-content: center; position:absolute; margin-top:22px;">
+            <option>Authors</option>
+            <option>Jurnals</option>
+            <option>Key Words</option>
+            <option>Papers</option>
+        </select>
+
+	</div>
+   <div id="Footer">
+   <img id="logoDCC" style="float:right; width:10%; height:60%; top:0px; margin:20px; right:0; position:absolute; " src="DCC.png" />
+        <p class="titleSpec">
+            Data Visualization
+        </p>
+        <p class="desc">
+            <span style="color: #999999" >Professor: </span> &nbsp; Raquel C. de Melo Minardi<br/><br/>
+        
+            This project has been designed and implemented by: <span style="padding-left:15px;"> Roozbeh Haghnazar </span><br />
+
+            </p>
+        <p style="font-family: 'Arial Narrow'; font-size: 12px; color: #999999; text-align:center;">
+                 Universidade Federal de Minas Gerais<br />
+                	DCC - Nov. 2014
+            </p>
+            
+    </div>
+	   
+	  <script src="RadarChart.js"></script>
+    <script src="Overview.js"></script>
+    <script src="Chart.Scatter.js"></script>
+	  <script src="ConvertStructures.js"></script>
+    
+    <script>
+		var P_A=[]; //the relation between papers and authors
+		var P_K=[]; //the relation between papers and Keywords
+		var P_JC=[]; //the relation between papers and Jornals/Confrences
+		var cLevel=[]; //confrence level dataset
+		var jcnormalized=[];
+		var jcQualify=[];//first column is sum of Quality of journals , 2nd is sum of citations , 3rd is number of papers and 4th is Qualification grade
+		var pnormalized=[];
+		var paperQualify=[];
+		var anormalized=[];
+		var authorQualify=[];//first column is sum of Quality of journals , 2nd is sum of citations , 3rd is number of papers and 4th is Qualification grade
+		var paperScatter=[];//the array which contain scatter plot;
+		var w=document.getElementById("Container");
+		var z=document.getElementById("infoDiv");
+		var infoSVG=d3.select('#infoDiv').append('svg')
+										.attr('id','infoSVG')
+										.attr('width',z.clientWidth)
+										.attr('height',z.clientHeight);
+		
+		var z=document.getElementById("radarDiv");
+		var radarSVG=d3.select('#radarDiv').append('svg')
+										.attr('id','radarSVG')
+										.attr('width',z.clientWidth)
+										.attr('height',z.clientHeight);
+		
+		var z=document.getElementById("scatterDiv");
+		d3.select('canvas').attr('width',z.clientWidth*90/100)
+						  .attr('height',z.clientHeight*90/100);
+
+		var SVG=d3.select('#Container').append('svg')
+							.attr('id','mainSVG')
+							.attr('width',w.clientWidth)
+							.attr('height',w.clientHeight);
+							
+							
+	
+		
+
+		var DataSet=[];
+		var Authors=[];
+		var Papers=[];
+		var JC=[];
+		var keyWords=[];
+		CreateDB("DataSet_SLR.csv");
+		
+	</script>
+    
+</body>
+</html>
